@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1598CB4D21BE099C000FE829 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CB4C21BE099C000FE829 /* AppDelegate.m */; };
+		1598CB5021BE099C000FE829 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CB4F21BE099C000FE829 /* ViewController.m */; };
+		1598CB5321BE099C000FE829 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1598CB5121BE099C000FE829 /* Main.storyboard */; };
+		1598CB5521BE099D000FE829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1598CB5421BE099D000FE829 /* Assets.xcassets */; };
+		1598CB5821BE099D000FE829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1598CB5621BE099D000FE829 /* LaunchScreen.storyboard */; };
+		1598CB5B21BE099D000FE829 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CB5A21BE099D000FE829 /* main.m */; };
+		1598CB6621BE0A97000FE829 /* HqWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CB6221BE0A97000FE829 /* HqWallet.m */; };
+		1598CB6721BE0A97000FE829 /* HqWalletUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CB6421BE0A97000FE829 /* HqWalletUtils.m */; };
+		1598CB6A21BE0B82000FE829 /* NSString+Public.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CB6821BE0B82000FE829 /* NSString+Public.m */; };
+		1598CB7021BE4B27000FE829 /* HqLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CB6C21BE4B27000FE829 /* HqLoopView.m */; };
+		1598CB7121BE4B27000FE829 /* HqLoopImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CB6F21BE4B27000FE829 /* HqLoopImageCell.m */; };
+		1598CB7A21BE75F8000FE829 /* HqFlowlayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CB7921BE75F8000FE829 /* HqFlowlayout.m */; };
+		1598CB7D21BE7F1B000FE829 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1598CB7B21BE7F1B000FE829 /* 1.jpeg */; };
+		1598CB7E21BE7F1B000FE829 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1598CB7C21BE7F1B000FE829 /* 2.jpeg */; };
+		1598CB8021BE8247000FE829 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1598CB7F21BE8247000FE829 /* 3.jpg */; };
+		1598CB8321BF6544000FE829 /* HqBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CB8221BF6544000FE829 /* HqBanner.m */; };
+		1598CBA421BF90A9000FE829 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1598CBA321BF90A9000FE829 /* 2.jpg */; };
+		DAF34675F64EF678371A1EA9 /* libPods-HqBtCoinStudy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 871DD11DCCB848FA8BDC0426 /* libPods-HqBtCoinStudy.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1598CB4821BE099C000FE829 /* HqBtCoinStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HqBtCoinStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1598CB4B21BE099C000FE829 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1598CB4C21BE099C000FE829 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1598CB4E21BE099C000FE829 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1598CB4F21BE099C000FE829 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1598CB5221BE099C000FE829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1598CB5421BE099D000FE829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1598CB5721BE099D000FE829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1598CB5921BE099D000FE829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1598CB5A21BE099D000FE829 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1598CB6221BE0A97000FE829 /* HqWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqWallet.m; sourceTree = "<group>"; };
+		1598CB6321BE0A97000FE829 /* HqWalletUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqWalletUtils.h; sourceTree = "<group>"; };
+		1598CB6421BE0A97000FE829 /* HqWalletUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqWalletUtils.m; sourceTree = "<group>"; };
+		1598CB6521BE0A97000FE829 /* HqWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqWallet.h; sourceTree = "<group>"; };
+		1598CB6821BE0B82000FE829 /* NSString+Public.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Public.m"; sourceTree = "<group>"; };
+		1598CB6921BE0B82000FE829 /* NSString+Public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Public.h"; sourceTree = "<group>"; };
+		1598CB6C21BE4B27000FE829 /* HqLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqLoopView.m; sourceTree = "<group>"; };
+		1598CB6D21BE4B27000FE829 /* HqLoopImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqLoopImageCell.h; sourceTree = "<group>"; };
+		1598CB6E21BE4B27000FE829 /* HqLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqLoopView.h; sourceTree = "<group>"; };
+		1598CB6F21BE4B27000FE829 /* HqLoopImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqLoopImageCell.m; sourceTree = "<group>"; };
+		1598CB7821BE75F8000FE829 /* HqFlowlayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqFlowlayout.h; sourceTree = "<group>"; };
+		1598CB7921BE75F8000FE829 /* HqFlowlayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqFlowlayout.m; sourceTree = "<group>"; };
+		1598CB7B21BE7F1B000FE829 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		1598CB7C21BE7F1B000FE829 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		1598CB7F21BE8247000FE829 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		1598CB8121BF6544000FE829 /* HqBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqBanner.h; sourceTree = "<group>"; };
+		1598CB8221BF6544000FE829 /* HqBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqBanner.m; sourceTree = "<group>"; };
+		1598CBA321BF90A9000FE829 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		871DD11DCCB848FA8BDC0426 /* libPods-HqBtCoinStudy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HqBtCoinStudy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBD6644AE160D467397FA6FD /* Pods-HqBtCoinStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HqBtCoinStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HqBtCoinStudy/Pods-HqBtCoinStudy.debug.xcconfig"; sourceTree = "<group>"; };
+		E5EE8C8FA25898577BCAB3DF /* Pods-HqBtCoinStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HqBtCoinStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-HqBtCoinStudy/Pods-HqBtCoinStudy.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1598CB4521BE099C000FE829 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF34675F64EF678371A1EA9 /* libPods-HqBtCoinStudy.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1598CB3F21BE099C000FE829 = {
+			isa = PBXGroup;
+			children = (
+				1598CB4A21BE099C000FE829 /* HqBtCoinStudy */,
+				1598CB4921BE099C000FE829 /* Products */,
+				6706C0AC1C3DF150586C4B4C /* Pods */,
+				DC23362E0B80DE9CEBAAF631 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1598CB4921BE099C000FE829 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1598CB4821BE099C000FE829 /* HqBtCoinStudy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1598CB4A21BE099C000FE829 /* HqBtCoinStudy */ = {
+			isa = PBXGroup;
+			children = (
+				1598CB6B21BE4B27000FE829 /* HqLoopView */,
+				1598CB6121BE0A97000FE829 /* HqWalletUtils */,
+				1598CB4B21BE099C000FE829 /* AppDelegate.h */,
+				1598CB4C21BE099C000FE829 /* AppDelegate.m */,
+				1598CB4E21BE099C000FE829 /* ViewController.h */,
+				1598CB4F21BE099C000FE829 /* ViewController.m */,
+				1598CB5121BE099C000FE829 /* Main.storyboard */,
+				1598CB5421BE099D000FE829 /* Assets.xcassets */,
+				1598CB5621BE099D000FE829 /* LaunchScreen.storyboard */,
+				1598CB5921BE099D000FE829 /* Info.plist */,
+				1598CB5A21BE099D000FE829 /* main.m */,
+			);
+			path = HqBtCoinStudy;
+			sourceTree = "<group>";
+		};
+		1598CB6121BE0A97000FE829 /* HqWalletUtils */ = {
+			isa = PBXGroup;
+			children = (
+				1598CB6921BE0B82000FE829 /* NSString+Public.h */,
+				1598CB6821BE0B82000FE829 /* NSString+Public.m */,
+				1598CB6521BE0A97000FE829 /* HqWallet.h */,
+				1598CB6221BE0A97000FE829 /* HqWallet.m */,
+				1598CB6321BE0A97000FE829 /* HqWalletUtils.h */,
+				1598CB6421BE0A97000FE829 /* HqWalletUtils.m */,
+			);
+			path = HqWalletUtils;
+			sourceTree = "<group>";
+		};
+		1598CB6B21BE4B27000FE829 /* HqLoopView */ = {
+			isa = PBXGroup;
+			children = (
+				1598CBA321BF90A9000FE829 /* 2.jpg */,
+				1598CB8121BF6544000FE829 /* HqBanner.h */,
+				1598CB8221BF6544000FE829 /* HqBanner.m */,
+				1598CB7F21BE8247000FE829 /* 3.jpg */,
+				1598CB7B21BE7F1B000FE829 /* 1.jpeg */,
+				1598CB7C21BE7F1B000FE829 /* 2.jpeg */,
+				1598CB6D21BE4B27000FE829 /* HqLoopImageCell.h */,
+				1598CB6F21BE4B27000FE829 /* HqLoopImageCell.m */,
+				1598CB6E21BE4B27000FE829 /* HqLoopView.h */,
+				1598CB6C21BE4B27000FE829 /* HqLoopView.m */,
+				1598CB7821BE75F8000FE829 /* HqFlowlayout.h */,
+				1598CB7921BE75F8000FE829 /* HqFlowlayout.m */,
+			);
+			path = HqLoopView;
+			sourceTree = "<group>";
+		};
+		6706C0AC1C3DF150586C4B4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBD6644AE160D467397FA6FD /* Pods-HqBtCoinStudy.debug.xcconfig */,
+				E5EE8C8FA25898577BCAB3DF /* Pods-HqBtCoinStudy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC23362E0B80DE9CEBAAF631 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				871DD11DCCB848FA8BDC0426 /* libPods-HqBtCoinStudy.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1598CB4721BE099C000FE829 /* HqBtCoinStudy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1598CB5E21BE099D000FE829 /* Build configuration list for PBXNativeTarget "HqBtCoinStudy" */;
+			buildPhases = (
+				CA6369F428E90C6B52ECC7B0 /* [CP] Check Pods Manifest.lock */,
+				1598CB4421BE099C000FE829 /* Sources */,
+				1598CB4521BE099C000FE829 /* Frameworks */,
+				1598CB4621BE099C000FE829 /* Resources */,
+				3FC45BDF11AA8A6C08B73372 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HqBtCoinStudy;
+			productName = HqBtCoinStudy;
+			productReference = 1598CB4821BE099C000FE829 /* HqBtCoinStudy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1598CB4021BE099C000FE829 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = HHQ;
+				TargetAttributes = {
+					1598CB4721BE099C000FE829 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 1598CB4321BE099C000FE829 /* Build configuration list for PBXProject "HqBtCoinStudy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1598CB3F21BE099C000FE829;
+			productRefGroup = 1598CB4921BE099C000FE829 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1598CB4721BE099C000FE829 /* HqBtCoinStudy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1598CB4621BE099C000FE829 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1598CB7E21BE7F1B000FE829 /* 2.jpeg in Resources */,
+				1598CB5821BE099D000FE829 /* LaunchScreen.storyboard in Resources */,
+				1598CBA421BF90A9000FE829 /* 2.jpg in Resources */,
+				1598CB5521BE099D000FE829 /* Assets.xcassets in Resources */,
+				1598CB8021BE8247000FE829 /* 3.jpg in Resources */,
+				1598CB5321BE099C000FE829 /* Main.storyboard in Resources */,
+				1598CB7D21BE7F1B000FE829 /* 1.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FC45BDF11AA8A6C08B73372 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HqBtCoinStudy/Pods-HqBtCoinStudy-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HqBtCoinStudy/Pods-HqBtCoinStudy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA6369F428E90C6B52ECC7B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HqBtCoinStudy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1598CB4421BE099C000FE829 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1598CB6A21BE0B82000FE829 /* NSString+Public.m in Sources */,
+				1598CB5021BE099C000FE829 /* ViewController.m in Sources */,
+				1598CB8321BF6544000FE829 /* HqBanner.m in Sources */,
+				1598CB7121BE4B27000FE829 /* HqLoopImageCell.m in Sources */,
+				1598CB7021BE4B27000FE829 /* HqLoopView.m in Sources */,
+				1598CB5B21BE099D000FE829 /* main.m in Sources */,
+				1598CB6721BE0A97000FE829 /* HqWalletUtils.m in Sources */,
+				1598CB4D21BE099C000FE829 /* AppDelegate.m in Sources */,
+				1598CB6621BE0A97000FE829 /* HqWallet.m in Sources */,
+				1598CB7A21BE75F8000FE829 /* HqFlowlayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1598CB5121BE099C000FE829 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1598CB5221BE099C000FE829 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1598CB5621BE099D000FE829 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1598CB5721BE099D000FE829 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1598CB5C21BE099D000FE829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1598CB5D21BE099D000FE829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1598CB5F21BE099D000FE829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBD6644AE160D467397FA6FD /* Pods-HqBtCoinStudy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7V926B465U;
+				INFOPLIST_FILE = HqBtCoinStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hqq.com.HqBtCoinStudy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1598CB6021BE099D000FE829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5EE8C8FA25898577BCAB3DF /* Pods-HqBtCoinStudy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7V926B465U;
+				INFOPLIST_FILE = HqBtCoinStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hqq.com.HqBtCoinStudy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1598CB4321BE099C000FE829 /* Build configuration list for PBXProject "HqBtCoinStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1598CB5C21BE099D000FE829 /* Debug */,
+				1598CB5D21BE099D000FE829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1598CB5E21BE099D000FE829 /* Build configuration list for PBXNativeTarget "HqBtCoinStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1598CB5F21BE099D000FE829 /* Debug */,
+				1598CB6021BE099D000FE829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1598CB4021BE099C000FE829 /* Project object */;
+}
