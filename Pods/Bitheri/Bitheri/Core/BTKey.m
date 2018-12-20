@@ -320,6 +320,11 @@ int ECDSA_SIG_recover_key_GFp(EC_KEY *eckey, ECDSA_SIG *ecsig, const unsigned ch
 
     if (pub && ctx) {
         BN_bin2bn(secret.bytes, 32, &priv);
+        printf("\n@---\n");
+        BN_print_fp(stdout, &priv);
+        printf("\n@---\n");
+
+
 
         if (EC_POINT_mul(group, pub, &priv, NULL, NULL, ctx)) {
             EC_KEY_set_private_key(_key, &priv);
@@ -329,6 +334,14 @@ int ECDSA_SIG_recover_key_GFp(EC_KEY *eckey, ECDSA_SIG *ecsig, const unsigned ch
     }
 
     if (pub) EC_POINT_free(pub);
+    printf("\n@---\n");
+
+    BN_print_fp(stdout, &priv);
+    printf("\n@---\n");
+
+
+
+
     BN_clear_free(&priv);
     if (ctx) BN_CTX_end(ctx);
     if (ctx) BN_CTX_free(ctx);
@@ -376,10 +389,22 @@ int ECDSA_SIG_recover_key_GFp(EC_KEY *eckey, ECDSA_SIG *ecsig, const unsigned ch
 
     [d appendBytes:&version length:1];
     d.length = 33;
-    BN_bn2bin(priv, (unsigned char *) d.mutableBytes + d.length - BN_num_bytes(priv));
-    if (EC_KEY_get_conv_form(_key) == POINT_CONVERSION_COMPRESSED) [d appendBytes:"\x01" length:1];
+    int privlen = BN_num_bytes(priv);
+    NSLog(@"hhhhh---%d",privlen);
+    BN_bn2bin(priv, (unsigned char *) d.mutableBytes + d.length - privlen);
+   
 
-    return [NSString base58checkWithData:d];
+    NSLog(@"@@prid==----------------%@",d);
+
+    if (EC_KEY_get_conv_form(_key) == POINT_CONVERSION_COMPRESSED) [d appendBytes:"\x01" length:1];
+    printf("\n@--2-\n");
+    BN_print_fp(stdout, priv);
+    printf("\n@--2-\n");
+    NSLog(@"@@prid==----------------2==%@",d);
+
+    NSString *pristr = [NSString base58checkWithData:d];
+    NSLog(@"@@pristr==%@",pristr);
+    return pristr;
 }
 
 - (void)setPublicKey:(NSData *)publicKey {
@@ -395,7 +420,8 @@ int ECDSA_SIG_recover_key_GFp(EC_KEY *eckey, ECDSA_SIG *ecsig, const unsigned ch
     NSMutableData *pubKey = [NSMutableData secureDataWithLength:l];
     unsigned char *bytes = pubKey.mutableBytes;
 
-    if (i2o_ECPublicKey(_key, &bytes) != l) return nil;
+    int result = i2o_ECPublicKey(_key, &bytes);
+    if ( result != l) return nil;
 
     return pubKey;
 }
@@ -534,10 +560,14 @@ int ECDSA_SIG_recover_key_GFp(EC_KEY *eckey, ECDSA_SIG *ecsig, const unsigned ch
     for (int i = 0; i < 4; i++) {
         EC_KEY *k = EC_KEY_new_by_curve_name(NID_secp256k1);
         int res = ECDSA_SIG_recover_key_GFp(k, sig, hash.bytes, hash.length, i, 1);
+        NSLog(@"res== %d",res);
+
         if (res == 0)
             continue;
         EC_KEY_set_conv_form(k, self.compressed ? POINT_CONVERSION_COMPRESSED : POINT_CONVERSION_UNCOMPRESSED);
         BOOL isEqual = [self.publicKey isEqualToData:[BTKey pubKey:k]];
+        NSLog(@"isEqual== %d",isEqual);
+
         EC_KEY_free(k);
         if (isEqual) {
             recId = i;
@@ -546,7 +576,10 @@ int ECDSA_SIG_recover_key_GFp(EC_KEY *eckey, ECDSA_SIG *ecsig, const unsigned ch
     }
     if (recId == -1)
         return nil;
+    NSLog(@"recId== %d",recId);
     uint8_t headerByte = (uint8_t) (recId + 27 + (self.compressed ? 4 : 0));
+    NSLog(@"headerByte== %d",headerByte);
+
     NSMutableData *sigData = [NSMutableData secureDataWithCapacity:65];
     [sigData appendUInt8:headerByte];
     NSData *r = [BTKey bn2bin:*(sig->r) andLength:32];

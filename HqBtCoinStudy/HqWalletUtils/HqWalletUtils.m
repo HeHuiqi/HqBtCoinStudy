@@ -87,8 +87,13 @@
     
     NSData *privatekeyData = [NSString convertHexStrToData:privatekey];
     BTKey *btkey = [[BTKey alloc] initWithSecret:privatekeyData compressed:YES];
-    NSLog(@"msgData== %@",[NSString convertDataToHexStr:msgData]);
+//    BTKey *btkey = [[BTKey alloc] initWithPrivateKey:@"L2ZxvziVam5X4K8GepnKEymZvRng4UcGSPixgaoMroSAuz8t22vS"];
+    btkey.compressed = YES;
 
+    NSLog(@"msgData== %@",[NSString convertDataToHexStr:msgData]);
+    NSLog(@"btkey.publicKey===%@",btkey.publicKey);
+    NSLog(@"btkey.privateKey===%@",btkey.privateKey);
+    NSLog(@",btkey.address===%@",btkey.address);
     NSData *d = [msgData SHA256_2];
     NSLog(@"d== %@",[NSString convertDataToHexStr:d]);
     NSData *reuslt = [btkey signHash:d];
@@ -105,7 +110,6 @@
     return  [self verifyMessage:message signature:signature address:address];
 }
 + (BOOL)verifyMessage:(NSString *)message signature:(NSString *)signature address:(NSString *)address{
-    
     NSData *singData  =[NSString convertHexStrToData:signature];
     singData = [singData base64EncodedDataWithOptions:NSDataBase64Encoding64CharacterLineLength];
     NSString *singDataBase64Str = [[NSString alloc] initWithData:singData encoding:NSUTF8StringEncoding];
